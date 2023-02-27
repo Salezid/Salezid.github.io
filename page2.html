@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<!-- Je suis dans un commmentaire -->
+    <head>
+    <!--La partie head n'apparait pas dans la fenetre du navigateur, sauf le titre qui est le nom de l'onglet qui s'ouvre dans le navigateur.
+        Elle contient des infos importantes pour garantir un affichage correct, référencé et stylé -->
+        <meta charset="UTF-8">
+        <title>sport2</title>
+        <link rel="stylesheet" href="style.css">
+        <script scr="script.js"></script>
+    </head>
+
+    <!--La partie body englobe le contenu textuel structuré 
+        et les liens vers :
+        - soit des éléments multimédia (photo, audio, vidéo)
+        - soit des pages déjà présentes sur le web 
+        - soit d'autres pages que vous créez... -->
+
+    <body>
+        <!--Structurer son texte-->
+        <h1>Basket-ball</h1>
+        
+        Le basket-ball ou basketball, fréquemment désigné en français par son abréviation basket, est un sport collectif de balle opposant deux équipes de cinq joueurs sur un terrain rectangulaire.<br>
+        
+        <p> Avec une balise paragraphe, le saut de ligne est automatique </p>
+
+        <!-- une liste sans numérotation-->
+        <ul>
+            <li> L'objectif de chaque équipe est de faire passer un ballon au sein d'un arceau de 45 cm de diamètre, fixé à un panneau et placé à 3,05 m du sol : le panier. </li>
+            <li> Chaque panier inscrit rapporte deux points à son équipe, à l'exception des tirs effectués au-delà de la ligne des trois points (qui rapportent trois points) et des lancers francs accordés à la suite d'une faute (qui rapportent un point). L'équipe avec le nombre de points le plus important remporte la partie. </li>
+        </ul> 
+
+        <!-- une liste avec numérotation-->
+        <ol>
+            <li> Le basket-ball se pratique exclusivement à la main, et les joueurs peuvent se déplacer balle en main en dribblant sur le sol ou en effectuant deux pas maximum sans dribbler.</li>
+            <li> L'équipe en possession du ballon (l’équipe qui attaque) tente d'inscrire des points en réalisant des tirs, des double-pas ou des dunks, tandis que l'équipe en défense essaie de les en empêcher en réalisant des interceptions de balle ou des contres. Si le tir échoue, les joueurs des deux équipes tentent d'attraper la balle au rebond.  </li>
+        </ol> 
+
+        <!-- pour integrer une image, enregistrée dans le même répertoire que le présent fichier HTML-->
+        <img width="315" height="350" src="basket.jpg"><br>
+
+        
+        <!-- intégration d'une vidéo présente sur YouTube : cliquer sur Partager, puis sur Intégrer(Embed) puis copier/coller le code.
+        Le code consiste en une balise <iframe> <iframe width="560" height="315" src="https://www.youtube.com/embed/hjUF3Poct1g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>>
+       
+        <!--pour integrer un lien vers un autre page HTML, enregistrée dans le même répertoire que le présent fichier HTML-->
+        <p><a href="index.html">Autre clic</a><br><p/>
+
+        <button id="mettreStyleSpecial()">Special</button>
+        <button id="enleveStyleSpecial()">Normal</button>
+        <script>
+               function mettreStyleSpecial() {
+               document.getElementById("mettreStyleSpecial").classList.add('Blue');
+               }
+
+               function enleveStyleSpecial() {
+               document.getElementById("enlevStyleSpecial").classList.remove('Green');
+               }
+     
+              <button onclick= () => document.body.style.backgroundColor = "Special";
+              <button onclick= () => document.body.style.backgroundColor = "Normal";
+         </script>
+
+	</body>
+</html>

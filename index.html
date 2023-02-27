@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<!-- -->
+    <head>
+    <!--La partie head n'apparait pas dans la fenetre du navigateur, sauf le titre qui est le nom de l'onglet qui s'ouvre dans le navigateur.
+        Elle contient des infos importantes pour garantir un affichage correct, référencé et stylé -->
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+         <script scr="script.js"></script>
+     <title>sport</title>
+    </head>
+
+    <!--La partie body englobe le contenu textuel structuré 
+        et les liens vers :
+        - soit des éléments multimédia (photo, audio, vidéo)
+        - soit des pages déjà présentes sur le web 
+        - soit d'autres pages que vous créez... -->
+         
+    <body>
+        <button id="mettreStyleSpecial()">Special</button>
+        <button id="enleveStyleSpecial()">Normal</button>
+        <script>
+               function mettreStyleSpecial() {
+               document.getElementById("mettreStyleSpecial").classList.add('specialColor');
+               }
+
+               function enleveStyleSpecial() {
+               document.getElementById("enlevStyleSpecial").classList.remove('specialColor');
+               }
+     
+               <button onclick = () => document.body.style.backgroundColor: navy;
+               <button onclick = () => document.body.style.backgroundColor: navy;
+        </script>
+        <!--Structurer son texte-->
+        <h1>Volley-ball </h1>
+        
+        Le volley-ball, ou volleyball, est un sport collectif opposant deux équipes de six joueurs séparées par un filet de hauteur variable selon le niveau, qui s'affrontent avec un ballon sur un terrain rectangulaire de 18 m de long sur 9 m de large. <br>
+        
+        <p>  </p>
+
+        <!-- Le materiel nécessaire-->
+        <ul>
+            <li> Le materiel nécessaire : 2 poteau, 2 mires (rouge/blanc) posées sur le filet aux 2 extrémités du terrain (délimitation).</li>
+            <li>  On peut aussi dire dans le langage courant les mires mais le terme exact est antenne, 1 filet, 1 ballon,1 terrain </li>
+        </ul> 
+
+        <!-- une liste avec numérotation-->
+        <ol>
+            <li>Le but du volley-ball est d'éviter de faire tomber la balle dans son propre camp. </li>
+            <li> Pour éviter cela, quatre problèmes majeurs se posent; il faut récupérer la balle, l'envoyer dans les trois mètres, la garder dans les trois mètres, et l'envoyer chez l'adversaire.</li>
+        </ol> 
+
+        <!-- pour integrer une image, enregistrée dans le même répertoire que le présent fichier HTML-->
+        <img width="560" height="315"src="volley.jpg"><br>
+
+        
+<iframe width="560" height="315" src="https://www.youtube.com/embed/f0ExubL77ow" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <!-- intégration d'une vidéo présente sur YouTube : cliquer sur Partager, puis sur Intégrer(Embed) puis copier/coller le code.
+        Le code consiste en une balise <iframe> -->
+
+      
+
+        <!--pour integrer un lien vers un autre page HTML, enregistrée dans le même répertoire que le présent fichier HTML-->
+        <p><a href="page2.html">Autre clic</a><br><p/>
+	</body>
+</html>
